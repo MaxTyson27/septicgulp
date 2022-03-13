@@ -1,0 +1,109 @@
+=flex-center ()
+  display: flex
+  justify-content: center
+  align-items: center
+
+=flex($ai, $jc, $g)
+  display: flex
+  align-items: $ai
+  justify-content: $jc
+  column-gap: $g
+
+=center-item ($position)
+  position: $position
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+
+=center-item-y ($position: absolute)
+  position: $position
+  top: 50%
+  transform: translateY(-50%)
+
+=center-item-x ($position: absolute)
+  position: $position
+  left: 50%
+  transform: translateX(-50%)
+
+// =font ($name,$w, $pathWoff2, $pathWoff)
+//   @font-face
+//     font:
+//       family: $name
+//       weight: $w
+//       style: normal
+//       display: swap
+//     src: local($name),
+//     url($pathWoff2) format('woff2'),
+//     url($pathWoff) format('woff')
+
+=bgp($path, $s, $pos1, $pos2 )
+  background:
+    repeat: no-repeat
+    image: url($path)
+    size: $s
+    position: $pos1 $pos2
+
+=fzc($f,$l,$c)
+  font-size: $f
+  line-height: $f
+  color: $c
+
+=fz($f, $l)
+  font-size: $f
+  line-height: $l
+
+=input($w, $h)
+  width: $w
+  height: $h
+  border-radius: 5px
+  padding: 0 20px
+  background: #FFFFFF
+  border: none
+  +fz(18px, 21px)
+
+=input2($w, $h)
+  width: $w
+  height: $h
+  border-radius: 5px
+  padding: 0 20px
+  background: #EBEDEF
+  border: none
+  +fz(16px, 19px)
+
+%rob-400
+  font:
+    family: 'Roboto', sans-serif
+    weight: 400
+
+%rob-500
+  font:
+    family: 'Roboto', sans-serif
+    weight: 500
+
+%rob-700
+  font:
+    family: 'Roboto', sans-serif
+    weight: 700
+
+=btn($w, $h)
+  width: $w
+  height: $h
+  background: $sec
+  color: #ffffff
+  border-radius: 5px
+  +flex-center
+  @extend %rob-700
+  border: none
+  padding: 0
+  cursor: pointer
+
+=card()
+  box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.1)
+  border-radius: 20px
+  background-color: #fff
+  padding: 60px 60px 50px 60px !important
+  display: flex
+  justify-content: center
+  column-gap: 25px
+  row-gap: 50px
+  flex-wrap: wrap

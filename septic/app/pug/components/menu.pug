@@ -1,6 +1,14 @@
-mixin menu(...items)
+mixin menu
   nav.menu
     ul.menu__list
-      each name in items
+      each value, index in {'Каталог септиков': 'catalog', 'Услуги': 'services', 'Отзывы': 'reviews', 'Примеры работ': 'gallery', 'Септики в рассрочку': 'bank'}
         li.menu__list-item 
-          a.menu__list-link(href="#")= name
+          a.menu__list-link(href="#" + value)= index
+      .header__contacts-box
+          p.header__contacts-link
+            img(src="./images/icons/mark.svg", alt="")
+            span Санкт-Петербург
+          a.header__contacts-link(href="tel:79205670759")
+            img(src="./images/icons/phone.svg", alt="")
+            span +7 (920) 567-07-59
+      

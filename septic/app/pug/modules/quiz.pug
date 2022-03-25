@@ -1,0 +1,109 @@
+section.quiz
+  .container
+    .quiz__inner
+      h2.quiz__title Ответьте на вопросы и получите скидку на септики и монтаж до 10%
+      h2.quiz__title--mobile Пройдите тест и получите скидку 10% на септик и монтаж
+      form.quiz__quiz.form-quiz(action="quiz.php")
+        .quiz__content.quiz--active
+          p.quiz__content-title Сколько человек будет проживать в доме?
+          label.quiz__content-label
+            input.quiz__content-radio(type="radio" name='people' value='1-3' checked)
+            span.quiz__content-radio-fake
+            span.quiz__content-text 1-3
+          label.quiz__content-label
+            input.quiz__content-radio(type="radio" name='people' value='4-6')
+            span.quiz__content-radio-fake
+            span.quiz__content-text 4-6
+          label.quiz__content-label
+            input.quiz__content-radio(type="radio" name='people' value='7-9')
+            span.quiz__content-radio-fake
+            span.quiz__content-text 7-9
+          label.quiz__content-label
+            input.quiz__content-radio(type="radio" name='people' value='Более 10 человек')
+            span.quiz__content-radio-fake
+            span.quiz__content-text Более 10 человек
+        .quiz__content
+          p.quiz__content-title Как долго планируете жить в доме?
+          label.quiz__content-label
+            input.quiz__content-radio(type="radio" value='Круглый год' name='live' checked)
+            span.quiz__content-radio-fake
+            span.quiz__content-text Круглый год
+          label.quiz__content-label
+            input.quiz__content-radio(type="radio" value='Сезонно' name='live')
+            span.quiz__content-radio-fake
+            span.quiz__content-text Сезонно
+        .quiz__content
+          p.quiz__content-title Где планируете установить септик?
+          label.quiz__content-label
+            input.quiz__content-radio(type="radio" value='Коттедж' name='home' checked)
+            span.quiz__content-radio-fake
+            span.quiz__content-text Коттедж
+          label.quiz__content-label
+            input.quiz__content-radio(type="radio" value='Загородный дом' name='home')
+            span.quiz__content-radio-fake
+            span.quiz__content-text Загородный дом
+          label.quiz__content-label
+            input.quiz__content-radio(type="radio" value='Дача' name='home')
+            span.quiz__content-radio-fake
+            span.quiz__content-text Дача
+          label.quiz__content-label
+            input.quiz__content-radio(type="radio" value='Другое' name='home')
+            span.quiz__content-radio-fake
+            span.quiz__content-text Другое
+        .quiz__content
+          p.quiz__content-title Какой тип грунта на вашем участке?
+          label.quiz__content-label
+            input.quiz__content-radio(type="radio" value='Песчаный' name='type' checked)
+            span.quiz__content-radio-fake
+            span.quiz__content-text Песчаный
+          label.quiz__content-label
+            input.quiz__content-radio(type="radio" value='Торф' name='type')
+            span.quiz__content-radio-fake
+            span.quiz__content-text Торф
+          label.quiz__content-label
+            input.quiz__content-radio(type="radio" value='Глина' name='type')
+            span.quiz__content-radio-fake
+            span.quiz__content-text Глина
+          label.quiz__content-label
+            input.quiz__content-radio(type="radio" value='Не знаю, затрудняюсь ответить' name='type')
+            span.quiz__content-radio-fake
+            span.quiz__content-text Не знаю, затрудняюсь ответить
+        .quiz__content
+          p.quiz__content-title Какой уровень грунтовых вод на вашем участке?
+          label.quiz__content-label
+            input.quiz__content-radio(type="radio" value='Низкий уровень' name='level' checked)
+            span.quiz__content-radio-fake
+            span.quiz__content-text Низкий уровень
+          label.quiz__content-label
+            input.quiz__content-radio(type="radio" value='Высокий уровень' name='level')
+            span.quiz__content-radio-fake
+            span.quiz__content-text Высокий уровень
+          label.quiz__content-label
+            input.quiz__content-radio(type="radio" value='Не знаю, затруднюсь ответить' name='level')
+            span.quiz__content-radio-fake
+            span.quiz__content-text Не знаю, затруднюсь ответить
+        .quiz__content
+          p.quiz__content-title Куда бы вы хотели выводить очищенную воду?
+          label.quiz__content-label
+            input.quiz__content-radio(type="radio" value='Ливневая канализация' name='clear' checked)
+            span.quiz__content-radio-fake
+            span.quiz__content-text Ливневая канализация
+          label.quiz__content-label
+            input.quiz__content-radio(type="radio" value='Дренажный колодец' name='clear')
+            span.quiz__content-radio-fake
+            span.quiz__content-text Дренажный колодец
+          label.quiz__content-label
+            input.quiz__content-radio(type="radio" value='Не знаю, затрудняюсь ответить' name='clear')
+            span.quiz__content-radio-fake
+            span.quiz__content-text Не знаю, затрудняюсь ответить
+        .quiz__content
+          p.quiz__content-title Заполните форму и наш менеджер позвонит вам для дальнейшей консультации!
+          .quiz__content-inputs
+            input.quiz__content-input.input-name(type="text" placeholder="Ваше имя" name='name' required)
+            input.quiz__content-input.input-phone(type="text" placeholder="+7(999) 999-99-99" name='phone' required)
+        .quiz__buttons
+          a.quiz__buttons-prev(href='#') Назад
+          a.quiz__buttons-next(href='#') 
+            | Следующий вопрос
+            img(src="images/icons/quiz-arrow.svg", alt="")
+          button.quiz__buttons-btn(type='submit') Отправить

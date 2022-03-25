@@ -1,6 +1,7 @@
 .sale
-  +bgp('../images/1s/main.png', cover, top, center)
+  +bgp('../images/1s/main.jpg', cover, top, center)
   margin-bottom: 75px
+  padding-top: 87px
   &__wrapper
     padding: 70px 0
     +bgp('../images/1s/img.png', 700px, bottom, right 60px)
@@ -11,6 +12,8 @@
     span
       color: $sec
   &__content
+    &-image
+      display: none
     &-items
       display: flex
       align-items: center
@@ -50,3 +53,58 @@
       +input(235px, 55px)
     &-button
       +btn(235px, 55px)
+    &-policy
+      +fzc(14px, 16px, #878787)
+@media screen and ( max-width: 1179px )
+
+  .sale
+    &__wrapper
+      +bgp('../images/1s/img-tab.png', 250px, right 65px, center)
+    &__title
+      margin-bottom: 45px
+    &__content
+      &-items
+        display: block
+        margin-bottom: 50px
+      &-item
+        &:first-child
+          margin-bottom: 15px
+          p
+            max-width: 100%
+        p
+          max-width: 100%
+    &__form
+      &-title
+        max-width: 380px
+
+@media screen and ( max-width:  710px)
+  .sale
+    &__wrapper
+      background-position: right 20px center
+
+@media screen and ( max-width:  639px)
+  .sale
+    &__wrapper
+      background-image: none
+    &__title
+      +fz(30px, 35px)
+      margin-bottom: 0
+    &__content
+      &-image
+        display: block
+      &-items
+        margin-bottom: 20px
+    &__form
+      &-title
+        +fz(19px, 22px)
+      &-text
+        margin-bottom: 20px
+      &-box
+        display: block
+      &-input
+        width: 100%
+        margin-bottom: 10px
+      &-button
+        width: 100%
+      &-policy
+        text-align: center

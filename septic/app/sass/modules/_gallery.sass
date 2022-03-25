@@ -1,0 +1,36 @@
+.gallery
+  background: #F4F6F8
+  padding: 75px 0
+  +bgp('../images/gallery/decor.png', 731px, right 10px, bottom 25px)
+  &__title
+    margin-bottom: 40px
+  &__list
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+    column-gap: 40px
+    row-gap: 40px
+  &__item
+    img
+      max-width: 360px
+      border-radius: 15px
+      height: 230px
+
+@media screen and ( max-width: 1179px )
+  .gallery
+    background-image: none
+    &__title
+      margin-bottom: 25px
+    &__list
+      justify-content: space-between
+      column-gap: 0px
+      row-gap: 15px
+    &__item
+      img
+        max-width: 300px
+        height: 192px
+
+@media screen and ( max-width: 639px )
+  .gallery
+    &__list
+      row-gap: 25px

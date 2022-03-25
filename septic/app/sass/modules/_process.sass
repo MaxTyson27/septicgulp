@@ -30,3 +30,105 @@
     &-text
       max-width: 340px
       height: 57px
+
+@media screen and ( max-width: 1179px )
+  .process
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      width: 86px
+      height: 537px
+      right: 6px
+      top: 50%
+      transform: translateY(-50%)
+      background-repeat: no-repeat
+      background-size: cover
+      background-image: url('../images/process/decor.png')
+    &__title
+      margin-bottom: 45px
+      text-align: center
+    &__list
+      display: block
+    &__item
+      display: flex
+      align-items: center
+      column-gap: 28px
+      &:not(:last-child)
+        padding-right: 0px
+        padding-bottom: 46px
+        &::after
+          transform: rotate(90deg)
+          left: 38px
+          right: unset
+          top: unset
+          bottom: 0
+      &:nth-child(2)
+        padding-bottom: 36px
+        &::after
+          bottom: 10px
+      &:last-child
+        img
+          max-width: 57px
+        .process__item-text
+          max-width: 359px
+      &-text
+        max-width: 425px
+      &-image
+        width: 86px
+        img
+          margin: 0 auto
+
+@media screen and ( max-width: 639px  )
+  .process
+    +bgp('../images/process/circle-mob.png', contain, left, bottom)
+    &::after
+      background-image: url('../images/process/decor-mob.png')
+      width: 149px
+      height: 53px
+      transform: translate(0)
+      top: 12px
+      right: 10px
+      background-size: cover
+    &__title
+      text-align: left
+      margin-bottom: 40px
+    &__item
+      display: block
+      &:not(:last-child)
+        padding-right: 0px
+        padding-bottom: 0px
+        padding-left: 28px
+        margin-bottom: 50px
+        &::after
+          transform: rotate(0) translateY(-50%)
+          left: 0
+          top: 50%
+          background-image: url('../images/process/arrow.svg')
+          height: 145px
+          width: 15px
+      &:last-child
+        padding-left: 28px
+        position: relative
+        &::after
+          content: ''
+          position: absolute
+          background-repeat: no-repeat
+          background-size: cover
+          transform: rotate(0) translateY(-50%)
+          left: 0
+          top: 50%
+          background-image: url('../images/process/arrow.svg')
+          height: 145px
+          width: 15px
+        img
+          max-width: 100%
+        .process__item-text
+          max-width: 237px
+      &-text
+        max-width: 242px
+      &-image
+        margin-bottom: 10px
+      &-title
+        +fz(20px, 23px)
+        margin-bottom: 10px

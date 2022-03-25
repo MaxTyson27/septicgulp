@@ -1,0 +1,27 @@
+section.delivery
+  .delivery__wrapper
+    .container
+      .delivery__content
+        h2.delivery__title Закажите бесплатную доставку! Привезем и установим септик без задержек!
+        .delivery__content-box
+          ul.delivery__list
+            li.delivery__item
+              p.delivery__item-title Бесплатно
+              p.delivery__item-text Бесплатная доставка при покупке септика любого бренда у нас
+            li.delivery__item
+              p.delivery__item-title Быстро
+              p.delivery__item-text Большой автопарк позволяет совершать доставку в срок
+            li.delivery__item
+              p.delivery__item-title Безопасно
+              p.delivery__item-text Специально оборудованные автомобили для доставки септиков
+          .delivery__line 
+            span.delivery__point
+            span.delivery__point
+            span.delivery__point
+        form.delivery__form.form(action="mail.php")
+          .delivery__form-title Оставьте заявку и мы вам перезвоним
+          .delivery__form-box
+            input.delivery__form-input.input-phone(type="text" required name='phone' placeholder='+7(999) 999-99-99')
+            input.delivery__form-input.input-name(type="text" required name='name' placeholder='Ваше имя')
+            button.delivery__form-btn(type='submit') Оставить заявку
+        p.delivery__policy Отправляя данные, вы соглашаетесь с <a href='policy.html'>политикой конфиденциальности</a>

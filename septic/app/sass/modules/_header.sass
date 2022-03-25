@@ -1,5 +1,14 @@
 .header
   padding: 15px 0
+  position: fixed
+  top: 0
+  right: 0
+  left: 0
+  background-color: #fff
+  z-index: 9
+  box-shadow: 0 0 19px 5px rgb(196 196 196)
+  &__burger
+    display: none
   &__inner
     display: flex
     justify-content: space-between
@@ -29,3 +38,20 @@
       font-size: 14px
       line-height: 16px
       color: #1B1B1B
+  .header__contacts-box
+    display: none
+@media screen and ( max-width: 1179px )
+  .menu
+    display: none
+  .header
+    &__contacts-btn
+      display: none
+
+@media screen and ( max-width: 639px )
+  .header
+    &__contacts-link
+      +fz(12px, 100%)
+      img
+        max-width: 13px
+    .logo
+      max-width: 155px

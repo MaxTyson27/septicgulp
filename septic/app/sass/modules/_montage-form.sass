@@ -40,3 +40,34 @@
     +fz(18px, 21px)
   &__policy
     +fz(14px, 16px)
+
+@media screen and ( max-width: 1179px )
+  .montage-form
+    +bgp('../images/montage-form/bg-tab.png', cover, center, top)
+    &::before,
+    &::after
+      display: none
+    &__title
+      max-width: 525px
+      margin-bottom: 20px
+    &__text
+      max-width: 480px
+      margin-bottom: 20px
+
+@media screen and ( max-width: 639px )
+  .montage-form
+    background-image: none
+    background-color: #000
+    &__title,
+    &__text
+      margin-bottom: 10px
+    form
+      display: block
+    &__input,
+    &__btn
+      width: 100%
+    &__input
+      margin-bottom: 10px
+    &__policy
+      +fz(10px, 12px)
+      text-align: center

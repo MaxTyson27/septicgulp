@@ -33,3 +33,59 @@
       height: 160px
       border-radius: 50%
       +flex(center, center, 0)
+
+@media screen and ( max-width: 1179px )
+  .technic
+    +bgp('../images/technic/decor-tab.png', contain, left, bottom)
+    &__title
+      margin-bottom: 25px
+    &__item
+      display: block
+      column-gap: 20px
+      max-width: 300px
+      &-title,
+      &-text
+        max-width: 300px
+      &:last-child
+        img
+          max-width: 195px
+        .technic__item-title,
+        .technic__item-text
+          max-width: 300px
+      &-image
+        margin-bottom: 10px
+
+@media screen and ( max-width: 1179px )
+  .technic
+    +bgp('../images/technic/circle-mob.png', contain, right, center)
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      width: 204px
+      height: 73px
+      top: -8px
+      right: -20px
+      background-repeat: no-repeat
+      background-size: cover
+      background-image: url('../images/technic/decor-mob.png')
+    &__title
+      text-align: center
+      margin-bottom: 40px
+    &__list
+      row-gap: 60px
+    &__item
+      text-align: center
+      &-text,
+      &-title
+        max-width: 100%
+      &-image
+        width: 103px
+        height: 103px
+        margin: 0 auto 10px
+      &:last-child
+        img
+          max-width: 107px
+        .technic__item-title,
+        .technic__item-text
+          max-width: 100%

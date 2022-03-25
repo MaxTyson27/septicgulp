@@ -1,1 +1,119 @@
+.footer
+  background: #1B1B1B
+  padding: 75px 0
+  &__inner
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin-bottom: 55px
+  &__menu
+    max-width: 630px
+  &__list
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    column-gap: 30px
+    row-gap: 10px
+    &-item
+      width: 80px
+    &-link
+      color: $footerC
+  &__contacts
+    &-item
+      @extend %rob-700
+      padding-left: 24px
+      color: #fff
+      position: relative
+      &::before
+        content: ''
+        position: absolute
+        width: 18px
+        height: 18px
+        left: 0
+        top: 0
+        background-repeat: no-repeat
+        background-size: contain
+        background-image: url('../images/icons/phone.svg')
+      &:first-child
+        margin-bottom: 12px
+        &::before
+          background-image: url('../images/icons/mark.svg')
+  &__content
+    &-text
+      max-width: 981px
+      color: #ffffff
+      +fz(15px, 18px)
+      text-align: center
+      margin: 0 auto 15px
+      &:first-child
+        max-width: 1062px
+    &-policy
+      +fz(15px, 18px)
+      color: $footerC
+      @extend %rob-700
+      display: block
+      text-align: center
 
+@media screen and ( max-width: 1179px )
+  .footer
+    &__inner
+      flex-wrap: wrap
+      align-items: start
+      row-gap: 20px
+      justify-content: start
+      margin-bottom: 20px
+    &__list
+      max-width: 290px
+      column-gap: 25px
+    .logo
+      margin-right: 50px
+    &__contacts
+      display: flex
+      column-gap: 35px
+      &-item
+        font-size: 21px
+        line-height: 178.19%
+        &::before
+          top: 9px
+        &:first-child
+          margin-bottom: 0
+          color: #D62020
+          font-size: 21px
+          line-height: 178.19%
+    &__content
+      &-policy
+        text-align: left
+      &-text
+        +fz(14px, 16px)
+        text-align: left
+        max-width: 100%
+        &:first-child
+          max-width: 100%
+
+@media screen and ( max-width: 639px )
+  .footer
+    .logo
+      display: block
+      margin-right: 0
+      order: 2
+      margin-bottom: 20px
+    &__inner
+      row-gap: 0
+    &__contacts
+      order: 3
+      display: block
+      &-item
+        &::before
+          top: 8px
+        &:last-child
+          &::before
+            top: 4px
+    &__list
+      max-width: 100%
+      column-gap: 30px
+    &__menu
+      margin-bottom: 35px
+    &__content
+      &-text
+        +fz(14px, 16px)
+        margin-bottom: 20px

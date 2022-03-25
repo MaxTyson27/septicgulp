@@ -1,0 +1,138 @@
+.quiz
+  padding-bottom: 75px
+  &__inner
+    display: flex
+    justify-content: space-between
+  &__title
+    max-width: 505px
+    &--mobile
+      display: none
+  &__quiz
+    max-width: 590px
+    width: 100%
+    background: #FFFFFF
+    box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.1)
+    border-radius: 15px
+    padding: 30px
+  &__buttons
+    display: flex
+    align-items: center
+    justify-content: space-between
+    &-btn
+      +btn(150px, 45px)
+      border-radius: 10px
+      display: none
+    &-next
+      background: $sec
+      border-radius: 10px
+      border: none
+      padding: 0
+      width: 243px
+      height: 45px
+      @extend %rob-700
+      color: #fff
+      +flex-center
+      column-gap: 20px
+      cursor: pointer
+    &-prev
+      border: none
+      padding: 0
+      @extend %rob-700
+      +flex-center
+      cursor: pointer
+      width: 105px
+      height: 45px
+      background: #F4F6F8
+      border-radius: 10px
+  &__content
+    display: none
+    &:nth-last-child(2)
+      margin-bottom: 50px
+    &.quiz--active
+      display: block
+    &-title
+      +fz(22px, 26px)
+      @extend %rob-700
+      margin-bottom: 30px
+    &-label
+      cursor: pointer
+      display: flex
+      column-gap: 14px
+      align-items: center
+      margin-bottom: 17px
+      &:last-child
+        margin-bottom: 50px
+    &-radio
+      display: none
+      &:checked + .quiz__content-radio-fake::before
+        opacity: 1
+      &-fake
+        display: block
+        width: 16px
+        height: 16px
+        border: 1px solid $sec
+        border-radius: 50%
+        position: relative
+        &::before
+          content: ''
+          position: absolute
+          width: 8px
+          height: 8px
+          border-radius: 50%
+          left: 50%
+          top: 50%
+          transform: translate(-50%,-50%)
+          background-color: $sec
+          opacity: 0
+          transition: .3s
+    &-input
+      +input(200px, 55px)
+      background: #EBEDEF
+    &-inputs
+      display: flex
+      column-gap: 20px
+      align-items: center
+
+@media screen and ( max-width: 1179px )
+  .quiz
+    &__inner
+      display: block
+    &__title
+      margin-bottom: 35px
+      max-width: 100%
+    &__quiz
+      max-width: 100%
+
+@media screen and ( max-width: 639px )
+  .quiz
+    .container
+      padding: 0
+    &__quiz
+      padding: 15px 10px 30px 10px
+    &__title
+      display: none
+      &--mobile
+        display: block
+        margin-bottom: 20px
+        padding: 0 10px
+    &__content
+      &:nth-last-child(2)
+        margin-bottom: 30px
+      &-title
+        +fz(16px, 19px)
+        margin-bottom: 20px
+      &-label
+        &:last-child
+          margin-bottom: 30px
+      &-inputs
+        display: block
+      &-input
+        width: 100%
+        &:first-child
+          margin-bottom: 15px
+    &__buttons
+      &-next
+        width: 175px
+        height: 45px
+        img
+          display: none

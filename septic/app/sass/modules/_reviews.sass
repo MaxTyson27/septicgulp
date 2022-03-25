@@ -1,0 +1,144 @@
+.reviews
+  padding: 75px 0
+  +bgp('../images/reviews/circle.png', 855px, left, bottom)
+  &__title
+    // margin-bottom: 45px
+    text-align: center
+    span
+      color: $sec
+  &__slider
+    position: relative
+  &__box
+    display: flex !important
+    justify-content: center
+    padding: 45px 0
+  &__item
+    max-width: 840px
+    background: #FFFFFF
+    box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.1)
+    border-radius: 10px
+    padding: 20px
+    margin: 0 auto
+    &-content-box
+      .reviews__item-person
+        display: none
+    &-info
+      margin-bottom: 18px
+    &-name
+      @extend %rob-700
+      +fz(22px, 26px)
+      margin-bottom: 3px
+    &-time
+      +fzc(12px, 14px, #C4C4C4)
+      margin-bottom: 3px
+    &-rating
+      display: flex
+      align-items: center
+      column-gap: 2px
+    &-text
+      max-width: 695px
+
+.slick-arrow
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  padding: 0
+  background-color: transparent
+  border: none
+  cursor: pointer
+  z-index: 5
+.slick-next
+  right: 0
+.slick-prev
+  left: 0
+.slick-dots
+  position: absolute
+  left: 50%
+  transform: translateX(-50%)
+  bottom: 0
+  display: flex
+  align-items: center
+  column-gap: 10px
+  li
+    button
+      padding: 0
+      background-color: #EBEBEB
+      font-size: 0
+      width: 8px
+      height: 8px
+      border-radius: 50%
+      border: none
+      cursor: pointer
+      transform: translateY(2px)
+
+  .slick-active
+    button
+      background-color: $sec
+      width: 11px
+      height: 11px
+      transform: translateY(0px)
+
+@media screen and ( max-width: 1179px )
+  .reviews
+    background-size: 554px
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      right: 10px
+      width: 191px
+      height: 66px
+      background-repeat: no-repeat
+      background-size: cover
+      background-image: url('../images/reviews/decor.png')
+    &__item
+      max-width: 460px
+      &-person
+        max-width: 40px
+        display: none !important
+      &-info
+        margin-bottom: 0
+      &-name
+        +fz(20px, 23px)
+      &-text
+        +fz(12px, 14px)
+      &-content-box
+        margin-bottom: 20px
+        display: flex
+        align-items: center
+        column-gap: 20px
+        .reviews__item-person
+          display: block !important
+
+  .slick-arrow
+    svg
+      width: 24px
+      height: 24px
+  .slick-dots
+    li
+      button
+        width: 6px
+        height: 6px
+        transform: translateY(1px)
+    .slick-active
+      button
+        width: 8px
+        height: 8px
+
+@media screen and ( max-width: 639px )
+  .reviews
+    padding-bottom: 55px
+    +bgp('../images/reviews/circle-sm.png', contain, top, right)
+    &::after
+      display: none
+    &__title
+      margin-bottom: 25px
+      text-align: left
+      span
+        display: block
+    &__box
+      padding: 0
+      margin-bottom: 20px
+      &:not(:nth-child(-n+3))
+        display: none !important

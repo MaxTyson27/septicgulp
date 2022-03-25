@@ -5,6 +5,7 @@ const sass = require('gulp-sass')(require('sass'));
 const concat = require('gulp-concat');
 const autoprefixer = require('gulp-autoprefixer');
 const uglify = require('gulp-uglify');
+// const babel = require('gulp-babel');
 const imagemin = require('gulp-imagemin');
 const del = require('del');
 const browserSync = require('browser-sync').create();
@@ -20,18 +21,20 @@ function browsersync() {
 }
 
 function pugGulp() {
-  return src('app/pug/index.pug')
+  return src('app/pug/*.pug')
     .pipe(
       pug({
         pretty: true
       })
     )
     .pipe(dest('app'))
+    .pipe(browserSync.stream())
 }
+
 
 function styles() {
   return src('app/sass/main.sass')
-    .pipe(sass({ outputStyle: 'compressed' }))
+    .pipe(sass({ outputStyle: 'expanded' }))
     .pipe(concat('style.min.css'))
     .pipe(autoprefixer({
       overrideBrowserslist: ['last 10 versions'],
@@ -45,13 +48,18 @@ function scripts() {
   return src([
     'node_modules/jquery/dist/jquery.js',
     'node_modules/inputmask/dist/jquery.inputmask.js',
+    'node_modules/slick-carousel/slick/slick.js',
+    'node_modules/jquery-match-height/dist/jquery.matchHeight.js',
     'app/js/main.js'
   ])
     .pipe(concat('main.min.js'))
-    .pipe(uglify())
+    // .pipe(babel({presets: ['@babel/env']}))
+    // .pipe(uglify())
     .pipe(dest('app/js'))
     .pipe(browserSync.stream())
 }
+
+
 
 function images() {
   return src('app/images/**/*.*')
@@ -73,6 +81,7 @@ function build() {
   return src([
     'app/**/*.html',
     'app/css/style.min.css',
+    'app/*.php',
     'app/js/main.min.js'
   ], { base: 'app' })
     .pipe(dest('dist'))
@@ -86,8 +95,9 @@ function cleanDist() {
 function watching() {
   watch(['app/sass/**/*.sass'], styles);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts)
-  watch(['app/pug/*.pug']).on('change', browserSync.reload)
+  watch(['app/pug/**/*.pug'], pugGulp).on('change', browserSync.reload)
 }
+
 
 exports.pugGulp = pugGulp;
 exports.styles = styles;

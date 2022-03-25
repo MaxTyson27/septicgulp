@@ -33,3 +33,45 @@
   &__policy
     letter-spacing: -0.025em
     +fzc(14px, 16px, #878787)
+
+@media screen and ( max-width: 1179px  )
+  .measure
+    &__inner
+      background-image: none
+    &__title
+      max-width: 500px
+    &__content
+      padding: 20px 0 35px 20px
+      &-wrapper
+        max-width: 100%
+        position: relative
+        img
+          position: absolute
+          top: 127px
+          right: -132px
+          transform: rotate(-90deg)
+          max-width: 340px
+
+@media screen and ( max-width: 639px )
+  .measure
+    &__content
+      padding: 20px 20px 0px 20px
+      &-wrapper
+        img
+          position: static
+          transform: rotate(0)
+          max-width: 290px
+    &__title
+      margin-bottom: 10px
+    &__text
+      margin-bottom: 10px
+    &__form
+      display: block
+    &__input
+      width: 100%
+      margin-bottom: 10px
+    &__button
+      width: 100%
+    &__policy
+      +fz(10px, 12px)
+      text-align: center

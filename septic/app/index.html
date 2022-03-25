@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Септик — продажа под ключ | Септик сайт</title>
     <link rel="stylesheet" href="./css/style.min.css">
+    <link rel="shortcut icon" href="images/favicon.svg" type="image/x-icon">
     <script defer src="./js/main.min.js"></script>
   </head>
   <body>
@@ -14,15 +15,20 @@
           <div class="header__inner"><a class="logo" href="index.html"><img src="./images/icons/logo.svg"/></a>
             <nav class="menu">
               <ul class="menu__list">
-                <li class="menu__list-item"> <a class="menu__list-link" href="#">Каталог септиков</a></li>
-                <li class="menu__list-item"> <a class="menu__list-link" href="#">Услуги</a></li>
-                <li class="menu__list-item"> <a class="menu__list-link" href="#">Отзывы</a></li>
-                <li class="menu__list-item"> <a class="menu__list-link" href="#">Примеры работ</a></li>
-                <li class="menu__list-item"> <a class="menu__list-link" href="#">Септики в рассрочку</a></li>
+                <li class="menu__list-item"> <a class="menu__list-link" href="#catalog">Каталог септиков</a></li>
+                <li class="menu__list-item"> <a class="menu__list-link" href="#services">Услуги</a></li>
+                <li class="menu__list-item"> <a class="menu__list-link" href="#reviews">Отзывы</a></li>
+                <li class="menu__list-item"> <a class="menu__list-link" href="#gallery">Примеры работ</a></li>
+                <li class="menu__list-item"> <a class="menu__list-link" href="#bank">Септики в рассрочку</a></li>
+                <div class="header__contacts-box">
+                  <p class="header__contacts-link"><img src="./images/icons/mark.svg" alt=""/><span>Санкт-Петербург</span></p><a class="header__contacts-link" href="tel:79205670759"><img src="./images/icons/phone.svg" alt=""/><span>+7 (920) 567-07-59</span></a>
+                </div>
               </ul>
             </nav>
             <div class="header__contacts"><a class="header__contacts-btn modal-link" href="#">Заказать звонок</a>
-              <div class="header__contacts-box"><a class="header__contacts-link" href="#"><img src="./images/icons/mark.svg" alt=""><span>Санкт-Петербург</span></a><a class="header__contacts-link" href="tel:79205670759"><img src="./images/icons/phone.svg" alt=""><span>+7 (920) 567-07-59</span></a></div>
+              <div class="header__contacts-box">
+                <p class="header__contacts-link"><img src="./images/icons/mark.svg" alt=""><span>Санкт-Петербург</span></p><a class="header__contacts-link" href="tel:79205670759"><img src="./images/icons/phone.svg" alt=""><span>+7 (920) 567-07-59</span></a>
+              </div>
             </div>
           </div>
         </div>
@@ -33,7 +39,7 @@
             <div class="container">
               <div class="sale__inner">
                 <div class="sale__content">
-                  <h1 class="sale__title">Продажа и монтаж септика Генезис <span>в Санкт-Петербурге</span></h1>
+                  <h1 class="sale__title">Продажа и монтаж септика Генезис <span>в Санкт-Петербурге</span></h1><img class="sale__content-image" src="images/1s/img-mob.png" alt="">
                   <div class="sale__content-items">
                     <div class="sale__content-item">
                       <p>Цены от производителя</p>
@@ -42,7 +48,7 @@
                       <p>Монтаж септиков до&nbsp;5 дней</p>
                     </div>
                   </div>
-                  <form class="sale__form" action="mail.php"> 
+                  <form class="sale__form form" action="mail.php">
                     <h3 class="sale__form-title">Рассчитаем стоимость септика и установки уже сегодня!</h3>
                     <p class="sale__form-text"> Оставьте свой номер телефона и наш инженер перезвонит вам!</p>
                     <div class="sale__form-box">
@@ -56,15 +62,114 @@
             </div>
           </div>
         </section>
+        <section class="quiz">
+          <div class="container">
+            <div class="quiz__inner">
+              <h2 class="quiz__title">Ответьте на вопросы и получите скидку на септики и монтаж до 10%</h2>
+              <h2 class="quiz__title--mobile">Пройдите тест и получите скидку 10% на септик и монтаж</h2>
+              <form class="quiz__quiz form-quiz" action="quiz.php">
+                <div class="quiz__content quiz--active">
+                  <p class="quiz__content-title">Сколько человек будет проживать в доме?</p>
+                  <label class="quiz__content-label">
+                    <input class="quiz__content-radio" type="radio" name="people" value="1-3" checked><span class="quiz__content-radio-fake"></span><span class="quiz__content-text">1-3</span>
+                  </label>
+                  <label class="quiz__content-label">
+                    <input class="quiz__content-radio" type="radio" name="people" value="4-6"><span class="quiz__content-radio-fake"></span><span class="quiz__content-text">4-6</span>
+                  </label>
+                  <label class="quiz__content-label">
+                    <input class="quiz__content-radio" type="radio" name="people" value="7-9"><span class="quiz__content-radio-fake"></span><span class="quiz__content-text">7-9</span>
+                  </label>
+                  <label class="quiz__content-label">
+                    <input class="quiz__content-radio" type="radio" name="people" value="Более 10 человек"><span class="quiz__content-radio-fake"></span><span class="quiz__content-text">Более 10 человек</span>
+                  </label>
+                </div>
+                <div class="quiz__content">
+                  <p class="quiz__content-title">Как долго планируете жить в доме?</p>
+                  <label class="quiz__content-label">
+                    <input class="quiz__content-radio" type="radio" value="Круглый год" name="live" checked><span class="quiz__content-radio-fake"></span><span class="quiz__content-text">Круглый год</span>
+                  </label>
+                  <label class="quiz__content-label">
+                    <input class="quiz__content-radio" type="radio" value="Сезонно" name="live"><span class="quiz__content-radio-fake"></span><span class="quiz__content-text">Сезонно</span>
+                  </label>
+                </div>
+                <div class="quiz__content">
+                  <p class="quiz__content-title">Где планируете установить септик?</p>
+                  <label class="quiz__content-label">
+                    <input class="quiz__content-radio" type="radio" value="Коттедж" name="home" checked><span class="quiz__content-radio-fake"></span><span class="quiz__content-text">Коттедж</span>
+                  </label>
+                  <label class="quiz__content-label">
+                    <input class="quiz__content-radio" type="radio" value="Загородный дом" name="home"><span class="quiz__content-radio-fake"></span><span class="quiz__content-text">Загородный дом</span>
+                  </label>
+                  <label class="quiz__content-label">
+                    <input class="quiz__content-radio" type="radio" value="Дача" name="home"><span class="quiz__content-radio-fake"></span><span class="quiz__content-text">Дача</span>
+                  </label>
+                  <label class="quiz__content-label">
+                    <input class="quiz__content-radio" type="radio" value="Другое" name="home"><span class="quiz__content-radio-fake"></span><span class="quiz__content-text">Другое</span>
+                  </label>
+                </div>
+                <div class="quiz__content">
+                  <p class="quiz__content-title">Какой тип грунта на вашем участке?</p>
+                  <label class="quiz__content-label">
+                    <input class="quiz__content-radio" type="radio" value="Песчаный" name="type" checked><span class="quiz__content-radio-fake"></span><span class="quiz__content-text">Песчаный</span>
+                  </label>
+                  <label class="quiz__content-label">
+                    <input class="quiz__content-radio" type="radio" value="Торф" name="type"><span class="quiz__content-radio-fake"></span><span class="quiz__content-text">Торф</span>
+                  </label>
+                  <label class="quiz__content-label">
+                    <input class="quiz__content-radio" type="radio" value="Глина" name="type"><span class="quiz__content-radio-fake"></span><span class="quiz__content-text">Глина</span>
+                  </label>
+                  <label class="quiz__content-label">
+                    <input class="quiz__content-radio" type="radio" value="Не знаю, затрудняюсь ответить" name="type"><span class="quiz__content-radio-fake"></span><span class="quiz__content-text">Не знаю, затрудняюсь ответить</span>
+                  </label>
+                </div>
+                <div class="quiz__content">
+                  <p class="quiz__content-title">Какой уровень грунтовых вод на вашем участке?</p>
+                  <label class="quiz__content-label">
+                    <input class="quiz__content-radio" type="radio" value="Низкий уровень" name="level" checked><span class="quiz__content-radio-fake"></span><span class="quiz__content-text">Низкий уровень</span>
+                  </label>
+                  <label class="quiz__content-label">
+                    <input class="quiz__content-radio" type="radio" value="Высокий уровень" name="level"><span class="quiz__content-radio-fake"></span><span class="quiz__content-text">Высокий уровень</span>
+                  </label>
+                  <label class="quiz__content-label">
+                    <input class="quiz__content-radio" type="radio" value="Не знаю, затруднюсь ответить" name="level"><span class="quiz__content-radio-fake"></span><span class="quiz__content-text">Не знаю, затруднюсь ответить</span>
+                  </label>
+                </div>
+                <div class="quiz__content">
+                  <p class="quiz__content-title">Куда бы вы хотели выводить очищенную воду?</p>
+                  <label class="quiz__content-label">
+                    <input class="quiz__content-radio" type="radio" value="Ливневая канализация" name="clear" checked><span class="quiz__content-radio-fake"></span><span class="quiz__content-text">Ливневая канализация</span>
+                  </label>
+                  <label class="quiz__content-label">
+                    <input class="quiz__content-radio" type="radio" value="Дренажный колодец" name="clear"><span class="quiz__content-radio-fake"></span><span class="quiz__content-text">Дренажный колодец</span>
+                  </label>
+                  <label class="quiz__content-label">
+                    <input class="quiz__content-radio" type="radio" value="Не знаю, затрудняюсь ответить" name="clear"><span class="quiz__content-radio-fake"></span><span class="quiz__content-text">Не знаю, затрудняюсь ответить</span>
+                  </label>
+                </div>
+                <div class="quiz__content">
+                  <p class="quiz__content-title">Заполните форму и наш менеджер позвонит вам для дальнейшей консультации!</p>
+                  <div class="quiz__content-inputs">
+                    <input class="quiz__content-input input-name" type="text" placeholder="Ваше имя" name="name" required>
+                    <input class="quiz__content-input input-phone" type="text" placeholder="+7(999) 999-99-99" name="phone" required>
+                  </div>
+                </div>
+                <div class="quiz__buttons"><a class="quiz__buttons-prev" href="#">Назад</a><a class="quiz__buttons-next" href="#">
+                     Следующий вопрос<img src="images/icons/quiz-arrow.svg" alt=""></a>
+                  <button class="quiz__buttons-btn" type="submit">Отправить</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
         <section class="works">
           <div class="container">
             <h2 class="works__title">Для чего нужен септик и как он работает?</h2>
             <div class="works__inner">
-              <div class="works__info">
-                <div class="works__info-icon"><span>?</span></div>
-                <p class="works__info-text">Септик - это автономная канализация, экологически безопасная, которая не источает запах и удобная в использовании.</p>
-              </div>
               <ul class="works__list">
+                <li class="works__info">
+                  <div class="works__info-icon"><span>?</span></div>
+                  <p class="works__info-text">Септик - это автономная канализация, экологически безопасная, которая не источает запах и удобная в использовании.</p>
+                </li>
                 <li class="works__item">
                   <div class="works__item-top"><span>01</span><img src="./images/icons/works-arrow.svg" alt=""></div>
                   <p class="works__item-text">Бытовые сточные воды направляются в септик по трубопроводу.</p>
@@ -88,6 +193,7 @@
                 <h2 class="different__title">Чем отличается септик от выгребной ямы?</h2>
                 <div class="different__box">
                   <ul class="different__list">
+                    <li class="different__img"><img src="images/different/septic-tab.png" alt=""></li>
                     <li class="different__item"> 
                       <p class="different__item-text">Современная канализационная система</p>
                     </li>
@@ -111,6 +217,7 @@
                     </li>
                   </ul>
                   <ul class="different__list">
+                    <li class="different__img"><img src="images/different/towlet-tab.png" alt=""></li>
                     <li class="different__item"> 
                       <p class="different__item-text">Выгребная яма из колец</p>
                     </li>
@@ -196,33 +303,45 @@
             <div class="container">
               <h2 class="reasons__title">6 причин, почему выбирают нас</h2>
               <ul class="reasons__list">
-                <li class="reasons__item">
-                  <p class="reasons__item-title"><span>01.</span> Бесплатная консультация</p>
-                  <p class="reasons__item-text">Специалист проведет для вас бесплатную консультацию и ответит на все вопросы</p>
+                <li class="reasons__item"><span class="reasons__item-num">01.</span>
+                  <div class="reasons__item-content">
+                    <p class="reasons__item-title">Бесплатная консультация</p>
+                    <p class="reasons__item-text">Специалист проведет для вас бесплатную консультацию и ответит на все вопросы</p>
+                  </div>
                 </li>
-                <li class="reasons__item">
-                  <p class="reasons__item-title"><span>02.</span> Экономия времени</p>
-                  <p class="reasons__item-text">Всегда доставляем оборудование быстро, а процесс установки и монтажа проходит до 5 дней</p>
+                <li class="reasons__item"><span class="reasons__item-num">02.</span>
+                  <div class="reasons__item-content">
+                    <p class="reasons__item-title">Экономия времени</p>
+                    <p class="reasons__item-text">Всегда доставляем оборудование быстро, а процесс установки и монтажа проходит до 5 дней</p>
+                  </div>
                 </li>
-                <li class="reasons__item">
-                  <p class="reasons__item-title"><span>03.</span> Оплата после установки</p>
-                  <p class="reasons__item-text">Оплата производится по договору после оказания услуг, в соответсвующие сроки</p>
+                <li class="reasons__item"><span class="reasons__item-num">03.</span>
+                  <div class="reasons__item-content">
+                    <p class="reasons__item-title">Оплата после установки</p>
+                    <p class="reasons__item-text">Оплата производится по договору после оказания услуг, в соответсвующие сроки</p>
+                  </div>
                 </li>
-                <li class="reasons__item">
-                  <p class="reasons__item-title"><span>04.</span> Гарантия по договору</p>
-                  <p class="reasons__item-text">Предоставляем гарантию на оборудование и на выполненные работы</p>
+                <li class="reasons__item"><span class="reasons__item-num">04.</span>
+                  <div class="reasons__item-content">
+                    <p class="reasons__item-title">Гарантия по договору</p>
+                    <p class="reasons__item-text">Предоставляем гарантию на оборудование и на выполненные работы</p>
+                  </div>
                 </li>
-                <li class="reasons__item">
-                  <p class="reasons__item-title"><span>05.</span> Не делаем наценки</p>
-                  <p class="reasons__item-text">Мы продаем септики от производителя, так что преобретая у нас, вы покупаете септики по самым выгодым ценам</p>
+                <li class="reasons__item"><span class="reasons__item-num">05.</span>
+                  <div class="reasons__item-content">
+                    <p class="reasons__item-title">Не делаем наценки</p>
+                    <p class="reasons__item-text">Мы продаем септики от производителя, так что преобретая у нас, вы покупаете септики по самым выгодым ценам</p>
+                  </div>
                 </li>
-                <li class="reasons__item">
-                  <p class="reasons__item-title"><span>06.</span> Подписание на месте</p>
-                  <p class="reasons__item-text">Для вашего удобства мы проводим заключение договора прямо на месте.</p>
+                <li class="reasons__item"><span class="reasons__item-num">06.</span>
+                  <div class="reasons__item-content">
+                    <p class="reasons__item-title">Подписание на месте</p>
+                    <p class="reasons__item-text">Для вашего удобства мы проводим заключение договора прямо на месте.</p>
+                  </div>
                 </li>
               </ul>
             </div>
-            <form class="reasons__form" action="mail.php">
+            <form class="reasons__form form" action="mail.php">
               <div class="reasons__form-box">
                 <h2 class="reasons__form-title">Оставьте заявку и получите скидку на оборудование и монтаж до 10 000 руб.</h2>
                 <p class="reasons__form-text">Оставьте заявку, чтобы зафиксировать за собой скидку на оборудование и монтаж</p>
@@ -236,12 +355,12 @@
             </form>
           </div>
         </section>
-        <section class="catalog">
+        <section class="catalog" id="catalog">
           <div class="container">
             <h2 class="catalog__title">Каталог септиков Genesis (Генезис) в Санкт-Петербурге</h2>
             <ul class="catalog__list">
               <li class="catalog__item">
-                <div class="catalog__image"><img src="../images/catalog/catalog-1.png" alt=""></div>
+                <div class="catalog__image"><img src="images/catalog/catalog-1.png" alt=""></div>
                 <div class="catalog__item-title">Септик Genesis 350 (Генезис 350) <br> <span>В Санкт-Петербурге</span></div>
                 <div class="catalog__info">
                   <div class="catalog__info-box">
@@ -253,7 +372,7 @@
                 </div><a class="catalog__btn modal-link" href="#">Заказать</a>
               </li>
               <li class="catalog__item">
-                <div class="catalog__image"><img src="../images/catalog/catalog-2.png" alt=""></div>
+                <div class="catalog__image"><img src="images/catalog/catalog-2.png" alt=""></div>
                 <div class="catalog__item-title">Септик Genesis 350PR (Генезис 350ПР) <br> <span>В Санкт-Петербурге</span></div>
                 <div class="catalog__info">
                   <div class="catalog__info-box">
@@ -265,7 +384,7 @@
                 </div><a class="catalog__btn modal-link" href="#">Заказать</a>
               </li>
               <li class="catalog__item">
-                <div class="catalog__image"><img src="../images/catalog/catalog-3.png" alt=""></div>
+                <div class="catalog__image"><img src="images/catalog/catalog-3.png" alt=""></div>
                 <div class="catalog__item-title">Септик Genesis 350L (Генезис 350Л) <br> <span>В Санкт-Петербурге</span></div>
                 <div class="catalog__info">
                   <div class="catalog__info-box">
@@ -277,7 +396,7 @@
                 </div><a class="catalog__btn modal-link" href="#">Заказать</a>
               </li>
               <li class="catalog__item">
-                <div class="catalog__image"><img src="../images/catalog/catalog-4.png" alt=""></div>
+                <div class="catalog__image"><img src="images/catalog/catalog-4.png" alt=""></div>
                 <div class="catalog__item-title">Септик Genesis 350LPR (Генезис 350ЛПР) <br> <span>В Санкт-Петербурге</span></div>
                 <div class="catalog__info">
                   <div class="catalog__info-box">
@@ -289,7 +408,7 @@
                 </div><a class="catalog__btn modal-link" href="#">Заказать</a>
               </li>
               <li class="catalog__item">
-                <div class="catalog__image"><img src="../images/catalog/catalog-5.png" alt=""></div>
+                <div class="catalog__image"><img src="images/catalog/catalog-5.png" alt=""></div>
                 <div class="catalog__item-title">Септик Genesis 500 (Генезис 500) <br> <span>В Санкт-Петербурге</span></div>
                 <div class="catalog__info">
                   <div class="catalog__info-box">
@@ -301,7 +420,7 @@
                 </div><a class="catalog__btn modal-link" href="#">Заказать</a>
               </li>
               <li class="catalog__item">
-                <div class="catalog__image"><img src="../images/catalog/catalog-6.png" alt=""></div>
+                <div class="catalog__image"><img src="images/catalog/catalog-6.png" alt=""></div>
                 <div class="catalog__item-title">Септик Genesis 500L (Генезис 500Л) <br> <span>В Санкт-Петербурге</span></div>
                 <div class="catalog__info">
                   <div class="catalog__info-box">
@@ -313,7 +432,7 @@
                 </div><a class="catalog__btn modal-link" href="#">Заказать</a>
               </li>
               <li class="catalog__item">
-                <div class="catalog__image"><img src="../images/catalog/catalog-7.png" alt=""></div>
+                <div class="catalog__image"><img src="images/catalog/catalog-7.png" alt=""></div>
                 <div class="catalog__item-title">Септик Genesis 500PR (Генезис 500ПР) <br> <span>В Санкт-Петербурге</span></div>
                 <div class="catalog__info">
                   <div class="catalog__info-box">
@@ -325,7 +444,7 @@
                 </div><a class="catalog__btn modal-link" href="#">Заказать</a>
               </li>
               <li class="catalog__item">
-                <div class="catalog__image"><img src="../images/catalog/catalog-8.png" alt=""></div>
+                <div class="catalog__image"><img src="images/catalog/catalog-8.png" alt=""></div>
                 <div class="catalog__item-title">Септик Genesis 500PRL (Генезис 500ПРЛ) <br> <span>В Санкт-Петербурге</span></div>
                 <div class="catalog__info">
                   <div class="catalog__info-box">
@@ -337,7 +456,7 @@
                 </div><a class="catalog__btn modal-link" href="#">Заказать</a>
               </li>
               <li class="catalog__item">
-                <div class="catalog__image"><img src="../images/catalog/catalog-9.png" alt=""></div>
+                <div class="catalog__image"><img src="images/catalog/catalog-9.png" alt=""></div>
                 <div class="catalog__item-title">Септик Genesis 700 (Генезис 700) <br> <span>В Санкт-Петербурге</span></div>
                 <div class="catalog__info">
                   <div class="catalog__info-box">
@@ -349,7 +468,7 @@
                 </div><a class="catalog__btn modal-link" href="#">Заказать</a>
               </li>
               <li class="catalog__item">
-                <div class="catalog__image"><img src="../images/catalog/catalog-10.png" alt=""></div>
+                <div class="catalog__image"><img src="images/catalog/catalog-10.png" alt=""></div>
                 <div class="catalog__item-title">Септик Genesis 700L (Генезис 700Л) <br> <span>В Санкт-Петербурге</span></div>
                 <div class="catalog__info">
                   <div class="catalog__info-box">
@@ -361,7 +480,7 @@
                 </div><a class="catalog__btn modal-link" href="#">Заказать</a>
               </li>
               <li class="catalog__item">
-                <div class="catalog__image"><img src="../images/catalog/catalog-11.png" alt=""></div>
+                <div class="catalog__image"><img src="images/catalog/catalog-11.png" alt=""></div>
                 <div class="catalog__item-title">Септик Genesis 700PR (Генезис 700ПР) <br> <span>В Санкт-Петербурге</span></div>
                 <div class="catalog__info">
                   <div class="catalog__info-box">
@@ -373,7 +492,7 @@
                 </div><a class="catalog__btn modal-link" href="#">Заказать</a>
               </li>
               <li class="catalog__item">
-                <div class="catalog__image"><img src="../images/catalog/catalog-12.png" alt=""></div>
+                <div class="catalog__image"><img src="images/catalog/catalog-12.png" alt=""></div>
                 <div class="catalog__item-title">Септик Genesis 700PRL (Генезис 700ПРЛ) <br> <span>В Санкт-Петербурге</span></div>
                 <div class="catalog__info">
                   <div class="catalog__info-box">
@@ -387,7 +506,7 @@
             </ul>
           </div>
         </section>
-        <section class="services">
+        <section class="services" id="services">
           <div class="container">
             <h2 class="services__title">Дополнительные услуги для септика в Санкт-Петербурге</h2>
             <ul class="services__list">
@@ -453,10 +572,11 @@
         <section class="catalog-form">
           <div class="container">
             <div class="catalog-form__inner">
+              <div class="catalog-form__image"><img src="../images/catalog-form/catalog-form-img.png" alt=""></div>
               <div class="catalog-form__content">
                 <h2 class="catalog-form__title">Получите каталог с актуальными ценами прямо сейчас!</h2>
                 <p class="catalog-form__text">Оставьте заявку и получите полный каталог с ценами прямо сейчас</p>
-                <form class="catalog-form__form" action="mail.php">
+                <form class="catalog-form__form form" action="mail.php">
                   <div class="catalog-form__box">
                     <input class="catalog-form__input input-phone" type="text" name="phone" placeholder="+7(999) 999-99-99" required>
                     <button class="catalog-form__btn" type="submit">Оставить заявку</button>
@@ -471,17 +591,26 @@
           <div class="container">
             <h2 class="process__title"><span>Как</span> мы работаем? </h2>
             <ul class="process__list">
-              <li class="process__item"><img src="./images/process/process-1.png" alt="">
-                <p class="process__item-title">Свяжитесь с нами</p>
-                <p class="process__item-text">Оставьте заявку или позвоните нам сами. Менеджер согласует дату для проведения замеров</p>
+              <li class="process__item">
+                <div class="process__item-image"><img src="./images/process/process-1.png" alt=""></div>
+                <div class="process__item-box">
+                  <p class="process__item-title">Свяжитесь с нами</p>
+                  <p class="process__item-text">Оставьте заявку или позвоните нам сами. Менеджер согласует дату для проведения замеров</p>
+                </div>
               </li>
-              <li class="process__item"><img src="./images/process/process-2.png" alt="">
-                <p class="process__item-title">Выберите удобное время</p>
-                <p class="process__item-text">Инженер приедет к вам в удобное время проконсультирует по всем вопросам и&nbsp;составит смету</p>
+              <li class="process__item">
+                <div class="process__item-image"><img src="./images/process/process-2.png" alt=""></div>
+                <div class="process__item-box">
+                  <p class="process__item-title">Выберите удобное время</p>
+                  <p class="process__item-text">Инженер приедет к вам в удобное время проконсультирует по всем вопросам и&nbsp;составит смету</p>
+                </div>
               </li>
-              <li class="process__item"><img src="./images/process/process-3.png" alt="">
-                <p class="process__item-title">Примите работу!</p>
-                <p class="process__item-text">В удобное для вас время приедет бригада и оперативно проведет монтаж септика</p>
+              <li class="process__item">
+                <div class="process__item-image"><img src="./images/process/process-3.png" alt=""></div>
+                <div class="process__item-box">
+                  <p class="process__item-title">Примите работу!</p>
+                  <p class="process__item-text">В удобное для вас время приедет бригада и оперативно проведет монтаж септика</p>
+                </div>
               </li>
             </ul>
           </div>
@@ -493,8 +622,8 @@
                 <div class="measure__content">
                   <h2 class="measure__title">Заполните форму и получите бесплатный замер от опытного инженера!</h2>
                   <p class="measure__text">Наш менеджер скоро свяжется и назначит удобное для вас время замера</p>
-                  <form class="measure__form" action="mail.php">
-                    <input class="measure__input input-phone" type="text" placeholder="+7(999) 999-99-99" required>
+                  <form class="measure__form form" action="mail.php">
+                    <input class="measure__input input-phone" type="text" placeholder="+7(999) 999-99-99" name="phone" required>
                     <button class="measure__button" type="submit">Оставить заявку</button>
                   </form>
                   <p class="measure__policy">Отправляя данные, вы соглашаетесь с <a href="policy.html">политикой конфиденциальности</a></p>
@@ -544,8 +673,8 @@
               <div class="montage-form__content"> 
                 <h2 class="montage-form__title">Проводим монтаж и установку септиков Genesis любой сложности</h2>
                 <p class="montage-form__text">Опыт наших инженеров и специалистов позволяет работать даже в самых сложных условиях!</p>
-                <form action="mail.php">
-                  <input class="montage-form__input input-phone" type="text" required placeholder="+7(999) 999-99-99">
+                <form class="form" action="mail.php">
+                  <input class="montage-form__input input-phone" type="text" required name="phone" placeholder="+7(999) 999-99-99">
                   <button class="montage-form__btn" type="submit">Оставить заявку</button>
                 </form>
                 <p class="montage-form__policy">Отправляя данные, вы соглашаетесь с <a href="policy.html">политикой конфиденциальности</a></p>
@@ -559,33 +688,455 @@
             <ul class="install__list"> 
               <li class="install__item"><img class="install__item-icon" src="./images/install/install-icon-1.svg" alt="">
                 <p class="install__item-step">01 шаг</p>
-                <p class="install__item-text">Подготовка котлована</p><img src="./images/install/install-arrow.svg" alt="">
+                <p class="install__item-text">Подготовка котлована</p><img class="install__item-arrow" src="./images/install/install-arrow.svg" alt="">
               </li>
               <li class="install__item"> <img class="install__item-icon" src="./images/install/install-icon-2.svg" alt="">
                 <p class="install__item-step">02 шаг</p>
-                <p class="install__item-text">Установка септика</p><img src="./images/install/install-arrow.svg" alt="">
+                <p class="install__item-text">Установка септика</p><img class="install__item-arrow" src="./images/install/install-arrow.svg" alt="">
               </li>
               <li class="install__item"> <img class="install__item-icon" src="./images/install/install-icon-3.svg" alt="">
                 <p class="install__item-step">03 шаг</p>
-                <p class="install__item-text">Монтаж трубопровода</p><img src="./images/install/install-arrow.svg" alt="">
+                <p class="install__item-text">Монтаж трубопровода</p><img class="install__item-arrow" src="./images/install/install-arrow.svg" alt="">
               </li>
               <li class="install__item"> <img class="install__item-icon" src="./images/install/install-icon-4.svg" alt="">
                 <p class="install__item-step">04 шаг</p>
-                <p class="install__item-text">Заполнение водой, одновременно с засыпкой</p><img src="./images/install/install-arrow.svg" alt="">
+                <p class="install__item-text">Заполнение водой, одновременно с засыпкой</p><img class="install__item-arrow" src="./images/install/install-arrow.svg" alt="">
               </li>
               <li class="install__item"> <img class="install__item-icon" src="./images/install/install-icon-5.svg" alt="">
                 <p class="install__item-step">05 шаг</p>
-                <p class="install__item-text">Пусконаладочные работы</p><img src="./images/install/install-arrow.svg" alt="">
+                <p class="install__item-text">Пусконаладочные работы</p><img class="install__item-arrow" src="./images/install/install-arrow.svg" alt="">
               </li>
               <li class="install__item"> <img class="install__item-icon" src="./images/install/install-icon-6.svg" alt="">
                 <p class="install__item-step">06 шаг</p>
-                <p class="install__item-text">Финальная засыпка</p><img src="./images/install/install-arrow.svg" alt="">
+                <p class="install__item-text">Финальная засыпка</p><img class="install__item-arrow" src="./images/install/install-arrow.svg" alt="">
               </li>
             </ul>
           </div>
         </section>
+        <section class="price">
+          <div class="container">
+            <div class="price__content">
+              <h2 class="price__title">Из чего складывается стоимость септика и его установки?</h2>
+              <ul class="price__list">
+                <li class="price__item"><img src="images/price/1.svg" alt="">
+                  <p class="price__item-text">Тип и плотность почвы</p>
+                </li>
+                <li class="price__item"><img src="images/price/2.svg" alt="">
+                  <p class="price__item-text">Уровень грунтовых вод</p>
+                </li>
+                <li class="price__item"><img src="images/price/3.svg" alt="">
+                  <p class="price__item-text">Бренд и модель септика</p>
+                </li>
+                <li class="price__item"><img src="images/price/4.svg" alt="">
+                  <p class="price__item-text">Необходимость специальной техники</p>
+                </li>
+                <li class="price__item"><img src="images/price/5.svg" alt="">
+                  <p class="price__item-text">Варианты отвода очищенных вод</p>
+                </li>
+                <li class="price__item"><img src="images/price/6.svg" alt="">
+                  <p class="price__item-text">Глубина подводных коммуникаций</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="bank" id="bank">
+          <div class="container">
+            <div class="bank__inner">
+              <div class="bank__content">
+                <h2 class="bank__title">Рассрочка 0% на септик Генезис без банка в Санкт-Петербурге</h2>
+                <ul class="bank__list">
+                  <li class="bank__text">Предоставляем рассрочку на следующих условиях:</li>
+                  <li class="bank__text">На срок от 4 до 6 месяцев</li>
+                  <li class="bank__text">Без лишних переплат</li>
+                  <li class="bank__text">По индивидуальному договору</li>
+                  <li class="bank__text">Без посредничесва банка</li>
+                </ul>
+                <p class="bank__form-title">Заполните форму и получите каталог бесплатно!</p>
+                <p class="bank__form-title--sm">Оставьте заявку и мы подготовим договор рассрочки для вас на лучших условиях</p>
+                <form class="form" action="mail.php">
+                  <input class="bank__input input-phone" type="text" placeholder="+7(___) ___-__-__" name="phone" required>
+                  <button class="bank__btn" type="submit">Отправить</button>
+                </form>
+                <p class="bank__policy">Отправляя данные, вы соглашаетесь с <a href="policy.html">Политикой конфиденциальности</a></p>
+              </div>
+              <div class="bank__image"><img src="images/bank/blank.png" alt=""></div>
+            </div>
+          </div>
+        </section>
+        <section class="warn">
+          <div class="container">
+            <div class="warn__inner">
+              <h2 class="warn__title">Могу ли я сам установить септик? <br> <span>Да, но вы можете допустить следующие ошибки!</span></h2>
+              <ul class="warn__list">
+                <li class="warn__item">
+                  <div class="warn__error"><img src="images/warn/close.png" alt=""></div>
+                  <div class="warn__content">
+                    <p class="warn__text">Несоблюдение необходимого градуса уклона при прокладке системы трубопроводов.</p>
+                  </div>
+                </li>
+                <li class="warn__item">
+                  <div class="warn__error"><img src="images/warn/close.png" alt=""></div>
+                  <div class="warn__content">
+                    <p class="warn__text">Траектория прокладки труб предполагает резкие перепады высоты и повороты.</p>
+                  </div>
+                </li>
+                <li class="warn__item">
+                  <div class="warn__error"><img src="images/warn/close.png" alt=""></div>
+                  <div class="warn__content">
+                    <p class="warn__text">Неправильно смонтирована и проложена система трубопровода.</p>
+                  </div>
+                </li>
+                <li class="warn__item">
+                  <div class="warn__error"><img src="images/warn/close.png" alt=""></div>
+                  <div class="warn__content">
+                    <p class="warn__text">Неправильное место для монтажа.</p>
+                  </div>
+                </li>
+                <li class="warn__item">
+                  <div class="warn__error"><img src="images/warn/close.png" alt=""></div>
+                  <div class="warn__content">
+                    <p class="warn__text">Наверно просчитанная глубина.</p>
+                  </div>
+                </li>
+                <li class="warn__item">
+                  <div class="warn__error"><img src="images/warn/close.png" alt=""></div>
+                  <div class="warn__content">
+                    <p class="warn__text">Неправильный выбор оборудования.</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+        <section class="steps">
+          <div class="container">
+            <h2 class="steps__title"><span>Получите пошаговую инструкцию</span><br>“Как установить септик самостоятельно”</h2>
+            <ul class="steps__list">
+              <li class="steps__item">
+                <div class="steps__item-box">
+                  <div class="steps__item-num"><img class="steps__item-icon" src="images/steps/1.png" alt=""><span>01</span></div>
+                  <div class="steps__item-arrow"><img src="images/steps/arrow.svg" alt=""></div>
+                </div>
+                <p class="steps__item-text">Узнаете по каким критериям нужно выбирать септик</p>
+              </li>
+              <li class="steps__item">
+                <div class="steps__item-box">
+                  <div class="steps__item-num"><img class="steps__item-icon" src="images/steps/2.png" alt=""><span>02</span></div>
+                  <div class="steps__item-arrow"><img src="images/steps/arrow.svg" alt=""></div>
+                </div>
+                <p class="steps__item-text">Как правильно выбрать место для установки</p>
+              </li>
+              <li class="steps__item">
+                <div class="steps__item-box">
+                  <div class="steps__item-num"><img class="steps__item-icon" src="images/steps/3.png" alt=""><span>03</span></div>
+                  <div class="steps__item-arrow"><img src="images/steps/arrow.svg" alt=""></div>
+                </div>
+                <p class="steps__item-text">Получите файл с руководством, а также консультацию инженера</p>
+              </li>
+              <li class="steps__item">
+                <div class="steps__item-box">
+                  <div class="steps__item-num"><img class="steps__item-icon" src="images/steps/4.png" alt=""><span>04</span></div>
+                  <div class="steps__item-arrow"><img src="images/steps/arrow.svg" alt=""></div>
+                </div>
+                <p class="steps__item-text">Всего за 10 шагов вы установите септик у себя дома!</p>
+              </li>
+            </ul>
+            <form class="steps__form form" action="mail.php">
+              <div class="steps__form-title">Отправьте заявку и получите файл с инструкцией бесплатно на e-mail, whatsapp или viber!</div>
+              <div class="steps__form-box">
+                <input class="steps__form-input input-name" type="text" name="name" required placeholder="Ваше имя">
+                <input class="steps__form-input input-phone" type="text" required name="phone" placeholder="+7(999) 999-99-99">
+                <input class="steps__form-input" type="email" name="email" placeholder="Ваш E-mail">
+                <button class="steps__form-btn" type="submit">Оставить заявку</button>
+              </div>
+              <p class="steps__policy">Отправляя данные, вы соглашаетесь с <a href='policy.html'>политикой конфиденциальности</a></p>
+            </form>
+          </div>
+        </section>
+        <section class="delivery">
+          <div class="delivery__wrapper">
+            <div class="container">
+              <div class="delivery__content">
+                <h2 class="delivery__title">Закажите бесплатную доставку! Привезем и установим септик без задержек!</h2>
+                <div class="delivery__content-box">
+                  <ul class="delivery__list">
+                    <li class="delivery__item">
+                      <p class="delivery__item-title">Бесплатно</p>
+                      <p class="delivery__item-text">Бесплатная доставка при покупке септика любого бренда у нас</p>
+                    </li>
+                    <li class="delivery__item">
+                      <p class="delivery__item-title">Быстро</p>
+                      <p class="delivery__item-text">Большой автопарк позволяет совершать доставку в срок</p>
+                    </li>
+                    <li class="delivery__item">
+                      <p class="delivery__item-title">Безопасно</p>
+                      <p class="delivery__item-text">Специально оборудованные автомобили для доставки септиков</p>
+                    </li>
+                  </ul>
+                  <div class="delivery__line"> <span class="delivery__point"></span><span class="delivery__point"></span><span class="delivery__point"></span></div>
+                </div>
+                <form class="delivery__form form" action="mail.php">
+                  <div class="delivery__form-title">Оставьте заявку и мы вам перезвоним</div>
+                  <div class="delivery__form-box">
+                    <input class="delivery__form-input input-phone" type="text" required name="phone" placeholder="+7(999) 999-99-99">
+                    <input class="delivery__form-input input-name" type="text" required name="name" placeholder="Ваше имя">
+                    <button class="delivery__form-btn" type="submit">Оставить заявку</button>
+                  </div>
+                </form>
+                <p class="delivery__policy">Отправляя данные, вы соглашаетесь с <a href='policy.html'>политикой конфиденциальности</a></p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="gallery" id="gallery">
+          <div class="container">
+            <h2 class="gallery__title">Примеры установленных септиков Генезис в Санкт-Петербурге</h2>
+            <ul class="gallery__list">
+              <li class="gallery__item"><img src="images/gallery/1.png" alt=""></li>
+              <li class="gallery__item"><img src="images/gallery/2.png" alt=""></li>
+              <li class="gallery__item"><img src="images/gallery/3.png" alt=""></li>
+              <li class="gallery__item"><img src="images/gallery/4.png" alt=""></li>
+              <li class="gallery__item"><img src="images/gallery/5.png" alt=""></li>
+              <li class="gallery__item"><img src="images/gallery/6.png" alt=""></li>
+            </ul>
+          </div>
+        </section>
+        <section class="answer">
+          <div class="container">
+            <h2 class="answer__title">Ответы на популярные вопросы покупателей</h2>
+            <div class="answer__inner">
+              <ul class="answer__list accordeon">
+                <li class="accordeon__item">
+                  <div class="accordeon__title item--active">
+                    <div class="accordeon__title-text">Что можно сливать в септик?</div><img src="images/answer/plus.svg" alt="">
+                  </div>
+                  <div class="accordeon__content content--active">В септики, которые устанавливает наша компания, можно сливать любые хозяйственно-бытовые стоки, в том числе: канализационные стоки, вода из-под ванны, душа, раковины, стиральной машины, посудомоечной машины и бани. Не желательно попадание: горюче-смазочных и лакокрасочных материалов (бензин, керосин, ацетон, краска).</div>
+                </li>
+                <li class="accordeon__item">
+                  <div class="accordeon__title"> 
+                    <div class="accordeon__title-text">Что делать, если отключили электоэнергию во время работы станции?</div><img src="images/answer/plus.svg" alt="">
+                  </div>
+                  <div class="accordeon__content">В септики, которые устанавливает наша компания, можно сливать любые хозяйственно-бытовые стоки, в том числе: канализационные стоки, вода из-под ванны, душа, раковины, стиральной машины, посудомоечной машины и бани. Не желательно попадание: горюче-смазочных и лакокрасочных материалов (бензин, керосин, ацетон, краска).</div>
+                </li>
+                <li class="accordeon__item">
+                  <div class="accordeon__title"> 
+                    <div class="accordeon__title-text">У нас высокий уровень грунтовых вод, можно ли установить септик?</div><img src="images/answer/plus.svg" alt="">
+                  </div>
+                  <div class="accordeon__content">В септики, которые устанавливает наша компания, можно сливать любые хозяйственно-бытовые стоки, в том числе: канализационные стоки, вода из-под ванны, душа, раковины, стиральной машины, посудомоечной машины и бани. Не желательно попадание: горюче-смазочных и лакокрасочных материалов (бензин, керосин, ацетон, краска).</div>
+                </li>
+              </ul>
+              <ul class="answer__list accordeon">
+                <li class="accordeon__item">
+                  <div class="accordeon__title item--active"> 
+                    <div class="accordeon__title-text">Как начать работу с нами?</div><img src="images/answer/plus.svg" alt="">
+                  </div>
+                  <div class="accordeon__content content--active">Оставьте заявку на сайте или позвоните по указанному телефону на сайте. Первый освободившийся специалист свяжется с Вами в течение короткого промежутка времени.</div>
+                </li>
+                <li class="accordeon__item">
+                  <div class="accordeon__title"> 
+                    <div class="accordeon__title-text">Что делать, если отключили электоэнергию во время работы станции?</div><img src="images/answer/plus.svg" alt="">
+                  </div>
+                  <div class="accordeon__content">Оставьте заявку на сайте или позвоните по указанному телефону на сайте. Первый освободившийся специалист свяжется с Вами в течение короткого промежутка времени.</div>
+                </li>
+                <li class="accordeon__item">
+                  <div class="accordeon__title"> 
+                    <div class="accordeon__title-text">У нас высокий уровень грунтовых вод, можно ли установить септик?</div><img src="images/answer/plus.svg" alt="">
+                  </div>
+                  <div class="accordeon__content">Оставьте заявку на сайте или позвоните по указанному телефону на сайте. Первый освободившийся специалист свяжется с Вами в течение короткого промежутка времени.</div>
+                </li>
+              </ul>
+              <ul class="answer__list accordeon">
+                <li class="accordeon__item">
+                  <div class="accordeon__title item--active">
+                    <div class="accordeon__title-text">Что можно сливать в септик?</div><img src="images/answer/plus.svg" alt="">
+                  </div>
+                  <div class="accordeon__content content--active">В септики, которые устанавливает наша компания, можно сливать любые хозяйственно-бытовые стоки, в том числе: канализационные стоки, вода из-под ванны, душа, раковины, стиральной машины, посудомоечной машины и бани. Не желательно попадание: горюче-смазочных и лакокрасочных материалов (бензин, керосин, ацетон, краска).</div>
+                </li>
+                <li class="accordeon__item">
+                  <div class="accordeon__title">
+                    <div class="accordeon__title-text">Как начать работу с нами?</div><img src="images/answer/plus.svg" alt="">
+                  </div>
+                  <div class="accordeon__content">Оставьте заявку на сайте или позвоните по указанному телефону на сайте. Первый освободившийся специалист свяжется с Вами в течение короткого промежутка времени.</div>
+                </li>
+                <li class="accordeon__item">
+                  <div class="accordeon__title"> 
+                    <div class="accordeon__title-text">Что делать, если отключили электоэнергию во время работы станции?</div><img src="images/answer/plus.svg" alt="">
+                  </div>
+                  <div class="accordeon__content">В септики, которые устанавливает наша компания, можно сливать любые хозяйственно-бытовые стоки, в том числе: канализационные стоки, вода из-под ванны, душа, раковины, стиральной машины, посудомоечной машины и бани. Не желательно попадание: горюче-смазочных и лакокрасочных материалов (бензин, керосин, ацетон, краска).</div>
+                </li>
+                <li class="accordeon__item">
+                  <div class="accordeon__title"> 
+                    <div class="accordeon__title-text">У нас высокий уровень грунтовых вод, можно ли установить септик?</div><img src="images/answer/plus.svg" alt="">
+                  </div>
+                  <div class="accordeon__content">В септики, которые устанавливает наша компания, можно сливать любые хозяйственно-бытовые стоки, в том числе: канализационные стоки, вода из-под ванны, душа, раковины, стиральной машины, посудомоечной машины и бани. Не желательно попадание: горюче-смазочных и лакокрасочных материалов (бензин, керосин, ацетон, краска).</div>
+                </li>
+                <li class="accordeon__item">
+                  <div class="accordeon__title"> 
+                    <div class="accordeon__title-text">Что делать, если отключили электоэнергию во время работы станции?</div><img src="images/answer/plus.svg" alt="">
+                  </div>
+                  <div class="accordeon__content">В септики, которые устанавливает наша компания, можно сливать любые хозяйственно-бытовые стоки, в том числе: канализационные стоки, вода из-под ванны, душа, раковины, стиральной машины, посудомоечной машины и бани. Не желательно попадание: горюче-смазочных и лакокрасочных материалов (бензин, керосин, ацетон, краска).</div>
+                </li>
+                <li class="accordeon__item">
+                  <div class="accordeon__title"> 
+                    <div class="accordeon__title-text">У нас высокий уровень грунтовых вод, можно ли установить септик?</div><img src="images/answer/plus.svg" alt="">
+                  </div>
+                  <div class="accordeon__content">В септики, которые устанавливает наша компания, можно сливать любые хозяйственно-бытовые стоки, в том числе: канализационные стоки, вода из-под ванны, душа, раковины, стиральной машины, посудомоечной машины и бани. Не желательно попадание: горюче-смазочных и лакокрасочных материалов (бензин, керосин, ацетон, краска).</div>
+                </li>
+              </ul>
+            </div>
+            <form class="answer__form form" action="mail.php" autocomplete="off">
+              <div class="answer__form-title">Остались вопросы? Задайте их нашему ведущему инженеру он ответит в течении 15 минут </div>
+              <div class="answer__form-box">
+                <input class="answer__form-input input-name" type="text" required name="name" placeholder="Ваше имя">
+                <input class="answer__form-input input-phone" type="text" required name="phone" placeholder="+7(999) 999-99-99">
+                <input class="answer__form-input" type="email" name="email" placeholder="Ваш E-mail">
+                <button class="answer__form-btn" type="submit">Оставить заявку</button>
+              </div>
+              <p class="answer__policy">Отправляя данные, вы соглашаетесь с <a href='policy.html'>политикой конфиденциальности</a></p>
+            </form>
+          </div>
+        </section>
+        <section class="reviews" id="reviews">
+          <div class="container">
+            <h2 class="reviews__title">Отзывы об установке септика <span>в Санкт-Петербурге</span></h2>
+            <div class="reviews__slider">
+              <div class="reviews__box">
+                <div class="reviews__item"><img class="reviews__item-person" src="images/reviews/person.svg" alt="">
+                  <div class="reviews__item-content">
+                    <div class="reviews__item-content-box"><img class="reviews__item-person" src="images/reviews/person.svg" alt="">
+                      <div class="reviews__item-info">
+                        <p class="reviews__item-name">Валентин Кристин</p>
+                        <p class="reviews__item-time">10 минут назад</p>
+                        <div class="reviews__item-rating"><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""></div>
+                      </div>
+                    </div>
+                    <p class="reviews__item-text">Спасибо за профессиональную работу! Долго выбирал компанию которая сделает монтаж септика и не ошибся. Приехала бригада и через 7 часов уже был проведен трубопровод, установлен дренажный колодец и станция биологической очистки в загородный дом. Еще раз спасибо за работу!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__box">
+                <div class="reviews__item"><img class="reviews__item-person" src="images/reviews/person.svg" alt="">
+                  <div class="reviews__item-content">
+                    <div class="reviews__item-content-box"><img class="reviews__item-person" src="images/reviews/person.svg" alt="">
+                      <div class="reviews__item-info">
+                        <p class="reviews__item-name">Сергей Колыш</p>
+                        <p class="reviews__item-time">8 месяцев назад</p>
+                        <div class="reviews__item-rating"><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""></div>
+                      </div>
+                    </div>
+                    <p class="reviews__item-text">Спасибо за профессиональную работу! Долго выбирал компанию которая сделает монтаж септика и не ошибся. Приехала бригада и через 7 часов уже был проведен трубопровод, установлен дренажный колодец и станция биологической очистки в загородный дом. Еще раз спасибо за работу!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__box">
+                <div class="reviews__item"><img class="reviews__item-person" src="images/reviews/person.svg" alt="">
+                  <div class="reviews__item-content">
+                    <div class="reviews__item-content-box"><img class="reviews__item-person" src="images/reviews/person.svg" alt="">
+                      <div class="reviews__item-info">
+                        <p class="reviews__item-name">Владимир Иванов</p>
+                        <p class="reviews__item-time">4 месяца назад</p>
+                        <div class="reviews__item-rating"><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""></div>
+                      </div>
+                    </div>
+                    <p class="reviews__item-text">Спасибо за профессиональную работу! Долго выбирал компанию которая сделает монтаж септика и не ошибся. Приехала бригада и через 7 часов уже был проведен трубопровод, установлен дренажный колодец и станция биологической очистки в загородный дом. Еще раз спасибо за работу!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__box">
+                <div class="reviews__item"><img class="reviews__item-person" src="images/reviews/person.svg" alt="">
+                  <div class="reviews__item-content">
+                    <div class="reviews__item-content-box"><img class="reviews__item-person" src="images/reviews/person.svg" alt="">
+                      <div class="reviews__item-info">
+                        <p class="reviews__item-name">Валентин Кристин</p>
+                        <p class="reviews__item-time">10 минут назад</p>
+                        <div class="reviews__item-rating"><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""></div>
+                      </div>
+                    </div>
+                    <p class="reviews__item-text">Спасибо за профессиональную работу! Долго выбирал компанию которая сделает монтаж септика и не ошибся. Приехала бригада и через 7 часов уже был проведен трубопровод, установлен дренажный колодец и станция биологической очистки в загородный дом. Еще раз спасибо за работу!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__box">
+                <div class="reviews__item"><img class="reviews__item-person" src="images/reviews/person.svg" alt="">
+                  <div class="reviews__item-content">
+                    <div class="reviews__item-content-box"><img class="reviews__item-person" src="images/reviews/person.svg" alt="">
+                      <div class="reviews__item-info">
+                        <p class="reviews__item-name">Валентин Кристин</p>
+                        <p class="reviews__item-time">10 минут назад</p>
+                        <div class="reviews__item-rating"><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""></div>
+                      </div>
+                    </div>
+                    <p class="reviews__item-text">Спасибо за профессиональную работу! Долго выбирал компанию которая сделает монтаж септика и не ошибся. Приехала бригада и через 7 часов уже был проведен трубопровод, установлен дренажный колодец и станция биологической очистки в загородный дом. Еще раз спасибо за работу!</p>
+                  </div>
+                </div>
+              </div>
+              <div class="reviews__box">
+                <div class="reviews__item"><img class="reviews__item-person" src="images/reviews/person.svg" alt="">
+                  <div class="reviews__item-content">
+                    <div class="reviews__item-content-box"><img class="reviews__item-person" src="images/reviews/person.svg" alt="">
+                      <div class="reviews__item-info">
+                        <p class="reviews__item-name">Валентин Кристин</p>
+                        <p class="reviews__item-time">10 минут назад</p>
+                        <div class="reviews__item-rating"><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""><img src="images/reviews/rating.svg" alt=""></div>
+                      </div>
+                    </div>
+                    <p class="reviews__item-text">Спасибо за профессиональную работу! Долго выбирал компанию которая сделает монтаж септика и не ошибся. Приехала бригада и через 7 часов уже был проведен трубопровод, установлен дренажный колодец и станция биологической очистки в загородный дом. Еще раз спасибо за работу!                         </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
       </main>
-      <footer class="footer"></footer>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer__inner"><a class="logo" href="index.html"><img src="images/icons/footer-logo.svg" alt=""></a>
+            <nav class="footer__menu">
+              <ul class="footer__list">
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Топас</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Биодевайс</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Коловеси</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Евробион</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Биодека</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Кристал</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Астра</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Евролос</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Зорде</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Аэробокс</a></li>
+                <li class="footer__list-item"><a class="footer__list-link" href="#">Оптима</a></li>
+              </ul>
+            </nav>
+            <div class="footer__contacts">
+              <p class="footer__contacts-item">Санкт-Петербург</p><a class="footer__contacts-item" href="tel:79205670759">+7 (920) 567-07-59</a>
+            </div>
+          </div>
+          <div class="footer__content">
+            <p class="footer__content-text">Данный сайт носит исключительно информационный характер и не является публичной офертой, определяемой положениями Статьи 437(2) ГК РФ. <br> Для получения точной информации об оказываемых услугах и их стоимости обращайтесь к менеджерам компании</p>
+            <p class="footer__content-text">В связи с нестабильным курсом валют и изменением стоимостью материалов, из которых изготовлен септик, цена может отличаться от представленных на сайте.</p><a class="footer__content-policy" href="policy.html">Политика конфидециальности</a>
+          </div>
+        </div>
+      </footer>
+      <div class="modal-close"></div>
+      <div class="modal">
+        <div class="modal__close"><svg class="t-popup__close-icon" width="23px" height="23px" viewBox="0 0 23 23" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g stroke="none" stroke-width="1" fill="#fff" fill-rule="evenodd">
+<rect transform="translate(11.313708, 11.313708) rotate(-45.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+<rect transform="translate(11.313708, 11.313708) rotate(-315.000000) translate(-11.313708, -11.313708) " x="10.3137085" y="-3.6862915" width="2" height="30"></rect>
+</g>
+</svg>
+        </div>
+        <div class="modal__content">
+          <div class="modal__title">Оставьте заявку</div>
+          <p class="modal__text">Наш менеджер скоро свяжется с вами!</p>
+          <form class="form modal__form" action="mail.php">
+            <input class="modal__form-input input-name" type="text" name="name" placeholder="Ваше имя" required>
+            <input class="modal__form-input input-phone" type="text" name="phone" placeholder="+7(___) ___-__-__" required>
+            <button class="modal__form-btn" type="submit">Отправить</button>
+          </form>
+          <p class="modal__policy">Отправляя данные, вы соглашаетесь с <a href="policy.html">Политикой конфиденциальности</a></p>
+        </div>
+      </div>
     </div>
   </body>
 </html>

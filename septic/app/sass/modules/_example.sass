@@ -48,3 +48,50 @@
       position: relative
       z-index: 2
       margin: 0 auto
+
+@media screen and ( max-width: 1179px )
+  .example
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 329px
+      height: 116px
+      bottom: 17px
+      right: 14px
+      background-repeat: no-repeat
+      background-size: cover
+      background-image: url('../images/example/decor.png')
+    &__title
+      text-align: center
+      margin: 0 auto 40px
+      max-width: 620px
+    &__inner
+      flex-wrap: wrap
+      justify-content: center
+      column-gap: 20px
+      row-gap: 30px
+
+@media screen and ( max-width: 639px )
+  .example
+    &::before
+      width: 158px
+      height: 58px
+      bottom: 7px
+      right: 7px
+    &__inner
+      row-gap: 25px
+    &__title
+      max-width: 308px
+      text-align: left
+      margin-bottom: 25px
+    &__item
+      width: 100%
+      max-width: 100%
+      &::before
+        width: calc(100% - 40px)
+        height: calc(100% - 30px)
+      img
+        width: 300px
+      &-link
+        display: none

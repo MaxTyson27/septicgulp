@@ -16,9 +16,10 @@
   &__content
     color: #fff
   &__title
-
     margin-bottom: 25px
     max-width: 576px
+  &__image
+    display: none
   &__text
     max-width: 314px
 
@@ -36,3 +37,45 @@
     margin-bottom: 10px
   &__policy
     +fz(14px, 16px)
+
+@media screen and ( max-width: 1179px )
+  .catalog-form
+    &__inner
+      background-size: 250px
+      background-position: top 60px right 20px
+      &::after
+        background-image: url('../images/catalog-form/decor-tab.png')
+        width: 120px
+        height: 300px
+        top: 0
+        right: 17px
+    &__title
+      max-width: 375px
+      margin-bottom: 20px
+
+@media screen and ( max-width: 639px )
+  .catalog-form
+    &__inner
+      padding-top: 55px
+      background-image: none
+      &::after
+        display: none
+    &__image
+      display: block
+      img
+        height: 210px
+        margin: 0 auto
+    &__title
+      margin-bottom: 10px
+    &__text
+      margin-bottom: 10px
+    &__box
+      display: block
+    &__input
+      width: 100%
+      margin-bottom: 10px
+    &__btn
+      width: 100%
+    &__policy
+      text-align: center
+      +fz(10px, 12px)

@@ -18,7 +18,7 @@
     max-width: 360px
     width: 100%
     background-size: auto
-    background-position: right 5px top 10px
+    background-position: right 10px top 20px
     background-repeat: no-repeat
     &-icon
       margin-bottom: 15px
@@ -30,3 +30,47 @@
     &-text
       margin-bottom: 5px
       max-width: 202px
+
+@media screen and ( max-width: 1179px )
+  .install
+    background-size: contain
+    position: relative
+    &::after
+      content: ''
+      position: absolute
+      width: 204px
+      height: 74px
+      top: 0
+      right: 0
+      background-repeat: no-repeat
+      background-size: cover
+      background-image: url('../images/install/decor.png')
+    &__list
+      row-gap: 30px
+    &__item
+      max-width: 300px
+      background-size: 160px
+      &:nth-child(3)
+        background-size: 107px
+      &:nth-child(4)
+        background-size: 123px
+      &:nth-child(5)
+        background-size: 127px
+      &:last-child
+        background-size: 99px
+
+@media screen and ( max-width: 639px )
+  .install
+    &__title
+      margin-bottom: 40px
+    &__list
+      row-gap: 20px
+    &__item
+      padding-right: 45px
+      background-position: right 40px top 20px
+      position: relative
+      &-arrow
+        position: absolute
+        right: -60px
+        top: 50%
+        transform: translateY(-50%) rotate(90deg)

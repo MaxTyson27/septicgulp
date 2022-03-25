@@ -1,0 +1,19 @@
+section.bank#bank
+  .container
+    .bank__inner
+      .bank__content
+        h2.bank__title Рассрочка 0% на септик Генезис без банка в Санкт-Петербурге
+        ul.bank__list
+          li.bank__text Предоставляем рассрочку на следующих условиях:
+          li.bank__text На срок от 4 до 6 месяцев
+          li.bank__text Без лишних переплат
+          li.bank__text По индивидуальному договору
+          li.bank__text Без посредничесва банка
+        p.bank__form-title Заполните форму и получите каталог бесплатно!
+        p.bank__form-title--sm Оставьте заявку и мы подготовим договор рассрочки для вас на лучших условиях
+        form.form(action="mail.php")
+          input.bank__input.input-phone(type="text" placeholder="+7(___) ___-__-__" name='phone' required)
+          button.bank__btn(type='submit') Отправить
+        p.bank__policy Отправляя данные, вы соглашаетесь с <a href="policy.html">Политикой конфиденциальности</a>
+      .bank__image
+        img(src="images/bank/blank.png", alt="")

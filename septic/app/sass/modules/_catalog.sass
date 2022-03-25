@@ -68,3 +68,59 @@
   &__btn
     +btn(100%, 55px)
     +fz(18px, 21px)
+
+@media screen and ( max-width: 1179px )
+  .catalog
+    &::after
+      background-image: url('../images/catalog/decor-tab.png')
+      width: 145px
+      height: 580px
+      left: 24px
+      bottom: 30px
+    &__title
+      margin-bottom: 25px
+    &__list
+      padding: 0 !important
+      box-shadow: none
+      column-gap: 0px
+      row-gap: 25px
+      background-color: transparent
+      justify-content: space-between
+    &__item
+      max-width: 140px
+      padding: 10px
+      background: #FFFFFF
+      box-shadow: 4px 4px 50px rgba(0, 0, 0, 0.1)
+      border-radius: 10px
+      &-title
+        +fz(12px,14px)
+        margin-bottom: 10px
+    &__info
+      row-gap: 8px
+      &-num
+        +fz(9px, 11px)
+      &-title
+        padding-left: 16px
+        +fz(9px, 11px)
+        &::before
+          width: 12px
+          height: 12px
+      &-price
+        +fz(10px, 12px)
+    &__btn
+      +fz(13px, 15px)
+      width: 120px
+      height: 27px
+    &__image
+      max-width: 120px
+      height: 111px
+      img
+        height: 110px
+
+@media screen and ( max-width: 639px )
+  .catalog
+    +bgp('../images/catalog/circle-mob.png', contain, top, right)
+    &::after
+      display: none
+    &__title
+      text-align: left
